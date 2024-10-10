@@ -1,0 +1,45 @@
+import { Guides } from '@/components/Guides'
+import { Resources } from '@/components/Resources'
+import { HeroPattern } from '@/components/HeroPattern'
+
+export const metadata = {
+  title: 'GPA @ UniMelb',
+  description:
+    'GPA @ UniMelb',
+}
+
+export const sections = [
+  { title: 'Guides', id: 'guides' },
+  { title: 'Resources', id: 'resources' },
+]
+
+<HeroPattern />
+
+# GPA @ UniMelb
+
+The GPA (Grade Point Average) at the University of Melbourne is a critical measure of academic performance. It helps students track their progress and set goals for future achievements.
+
+<div className="not-prose mb-16 mt-6 flex gap-3">
+  <Button href="/gpa-calculator" arrow="right">
+    <>Quickstart</>
+  </Button>
+
+</div>
+
+
+
+## Getting started {{ anchor: false }}
+
+To calculate your GPA at the University of Melbourne, you will need to gather your subject marks and credit points. The GPA is calculated by dividing the total weighted marks by the total credit points. For more detailed information on how to calculate your GPA, visit our [GPA calculation guide](#guides). To learn more about the grading system and other academic policies, check out the [University of Melbourne website](https://students.unimelb.edu.au/your-course/manage-your-course/exams-assessments-and-results/results-and-academic-statements/wam) or reach out to the Protocol community for assistance. {{ className: 'lead' }}
+
+<div className="not-prose">
+  <Button href="/gpa-calculator" variant="text" arrow="right">
+    <>Try now</>
+  </Button>
+</div>
+
+<div id="guides">
+  <Guides />
+</div>
+
+<Resources />

@@ -1,0 +1,41 @@
+@layer base {
+  :root {
+    --shiki-color-text: theme('colors.white');
+    --shiki-token-constant: theme('colors.emerald.300');
+    --shiki-token-string: theme('colors.emerald.300');
+    --shiki-token-comment: theme('colors.zinc.500');
+    --shiki-token-keyword: theme('colors.sky.300');
+    --shiki-token-parameter: theme('colors.pink.300');
+    --shiki-token-function: theme('colors.violet.300');
+    --shiki-token-string-expression: theme('colors.emerald.300');
+    --shiki-token-punctuation: theme('colors.zinc.200');
+  }
+
+  [inert] ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer components {
+  .no-spinner {
+    @apply [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none;
+  }
+}
+
+@layer utilities {
+  .transition-transform {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .translate-x-full {
+    transform: translateX(100%);
+  }
+
+  .translate-x-0 {
+    transform: translateX(0);
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
